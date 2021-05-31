@@ -26,7 +26,11 @@ class FButton extends StatelessWidget {
         ),
         child: Text(
           text,
-          style: TextStyle(fontSize: title, color: textcolor),
+          style: TextStyle(
+            fontSize: title,
+            color: textcolor,
+            fontFamily: "RobotoBlack",
+          ),
         ),
       ),
     );

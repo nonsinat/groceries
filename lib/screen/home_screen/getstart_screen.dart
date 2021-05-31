@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:online_fruit_flutter_version2/constant/theme_constant.dart';
-import 'package:online_fruit_flutter_version2/screen/home_screen/splash_screen.dart';
+import 'package:online_fruit_flutter_version2/screen/signin_screen/sign_in.dart';
 import 'package:online_fruit_flutter_version2/widgets/f_button.dart';
 
 class StartScreen extends StatefulWidget {
@@ -42,6 +42,7 @@ class _StartScreenState extends State<StartScreen> {
                 style: TextStyle(
                     fontSize: 35,
                     color: background,
+                    fontFamily: "RobotoBlack",
                     fontWeight: FontWeight.w500),
                 textAlign: TextAlign.center,
               ),
@@ -50,6 +51,7 @@ class _StartScreenState extends State<StartScreen> {
                 style: TextStyle(
                     fontSize: 35,
                     color: background,
+                    fontFamily: "RobotoBlack",
                     fontWeight: FontWeight.w500),
                 textAlign: TextAlign.center,
                 textWidthBasis: TextWidthBasis.parent,
@@ -58,8 +60,11 @@ class _StartScreenState extends State<StartScreen> {
                 height: defaultPadding1,
               ),
               Text(
-                "Ger your groceries in as fast as one hour",
-                style: TextStyle(color: Color(0xFFFCFCFC).withOpacity(0.7)),
+                "Get your groceries in as fast as one hour",
+                style: TextStyle(
+                  color: Color(0xFFFCFCFC).withOpacity(0.7),
+                  fontFamily: "RobotoRegular",
+                ),
               ),
               SizedBox(
                 height: 30,
@@ -68,7 +73,7 @@ class _StartScreenState extends State<StartScreen> {
                 onTap: () {
                   print("Get Started");
                   Navigator.push(context,
-                      MaterialPageRoute(builder: (context) => SplashScreen()));
+                      MaterialPageRoute(builder: (context) => SignIn()));
                 },
                 text: "Get Started",
               ),
